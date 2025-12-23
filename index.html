@@ -19,7 +19,7 @@
         .header-custom {
             background-color: #fff3b0;
             width: 100%;
-            padding: 8px 0;
+            padding: 10px 0;
             text-align: center;
             display: flex;
             justify-content: center;
@@ -30,7 +30,7 @@
             width: 100%;
             max-width: 400px;
             margin: 0 auto;
-            min-height: 100vh;
+            min-height: calc(100vh - 60px);
             background-color: #ffffff;
         }
 
@@ -39,7 +39,7 @@
         }
 
         .logo-img {
-            max-width: 90px;
+            max-width: 80px;
             height: auto;
         }
 
@@ -63,7 +63,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-            height: 230px;
+            height: 240px;
             transition: transform 0.2s;
             position: relative;
         }
@@ -97,8 +97,8 @@
         }
 
         .card-main-img {
-            width: 125px;
-            height: 125px;
+            width: 140px;
+            height: 140px;
             object-fit: contain;
         }
 
@@ -111,40 +111,38 @@
     </style>
 </head>
 <body>
-
-<div class="mobile-container">
     <header class="header-custom">
         <img src="assets/imgs/EcoLink_logo.png" alt="Logo EcoLink" class="logo-img">
     </header>
 
-    <div class="content-padding">
-        <div class="text-start">
-            <h1 class="header-title">Bem-vindo ao EcoLink!</h1>
-        </div>
-
-        <div class="row g-3">
-            <div class="col-6">
-                <a href="#" class="eco-card shadow-sm">
-                    <h3>Ler<br>QR-Codes</h3>
-                    <img src="assets/imgs/QRCode_icon.png" alt="QR Code" class="card-main-img">
-                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
-                </a>
+    <div class="mobile-container">
+        <div class="content-padding">
+            <div class="text-start">
+                <h1 class="header-title">Bem-vindo ao EcoLink!</h1>
             </div>
-            <div class="col-6">
-                <a href="#" class="eco-card shadow-sm">
-                    <h3>Ver história completa</h3>
-                    <img src="assets/imgs/Historia_icon.png" alt="Histórico" class="card-main-img">
-                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
-                </a>
-            </div>
-        </div>
 
-        <a href="#" class="eco-card-wide shadow-sm">
-            <span>Sobre o EcoLink</span>
-            <i class="fa-solid fa-chevron-right"></i>
-        </a>
+            <div class="row g-3">
+                <div class="col-6">
+                    <a href="pages/ReadQRCode.html" class="eco-card shadow-sm">
+                        <h3>Ler<br>QR-Codes</h3>
+                        <img src="assets/imgs/QRCode_icon.png" alt="QR Code" class="card-main-img">
+                        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a href="#" class="eco-card shadow-sm">
+                        <h3>Ver história completa</h3>
+                        <img src="assets/imgs/Historia_icon.png" alt="Histórico" class="card-main-img">
+                        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <a href="pages/EcoLinkAbout.html" class="eco-card-wide shadow-sm">
+                <span>Sobre o EcoLink</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
+        </div>
     </div>
-</div>
-
 </body>
 </html>
